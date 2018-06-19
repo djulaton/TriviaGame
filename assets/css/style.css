@@ -1,0 +1,22 @@
+body {
+    background-image: url('../images/90s-background.jpg');
+}
+
+.jumbotron {
+    background-color: rgb(160, 206, 233);
+    width: 50%;
+    margin-left: 25%;
+    margin-top: 10px;
+    padding: 50px;
+}
+
+#header {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+h1 {
+    font-family: 'Monoton', cursive;
+    background-color: aqua;
+    padding: 15px;
+}

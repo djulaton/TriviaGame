@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Trivia Game - Week 5</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap link -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Monoton" rel="stylesheet">
+
+    <!-- Link to personal CSS file -->
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
+
+</head>
+<body>
+
+    <div class="jumbotron">
+    <div class="container" id="header">
+        <div class="row" col-md-8>
+            <h1>I love the 90's Trivia Game</h1>
+        </div>
+    </div>
+
+    <div class-"container" id="game">
+
+    <div class="container" id="timer"></div>
+
+    <!-- Form elements -->
+    <div class="container">
+        <h4>1. Rugrats - What was Anjelica's doll's name?</h4>
+            <form>
+                <label class="radio-inline">
+                  <input type="radio" name="optradio">Reptar
+                </label>
+                <label class="radio-inline">
+                  <input type="radio" name="optradio">Cynthia
+                </label>
+                <label class="radio-inline">
+                  <input type="radio" name="optradio">Lillian
+                </label>
+                <label class="radio-inline">
+                        <input type="radio" name="optradio">Didi
+                </label>
+            </form>
+    </div>
+
+    <div class="container">
+            <h4>2. Doug - Who was Doug Funnie's crush?</h4>
+                <form>
+                    <label class="radio-inline">
+                      <input type="radio" name="optradio">Mrs. Wingo
+                    </label>
+                    <label class="radio-inline">
+                      <input type="radio" name="optradio">Patty Mayonnaise
+                    </label>
+                    <label class="radio-inline">
+                      <input type="radio" name="optradio">BeeBe Bluff
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="optradio">Loretta LaQuigley
+                    </label>
+                </form>
+        </div>
+
+
+        <div class="container">
+                <h4>3. Hey Arnold! - Who was Arnold's sidekick?</h4>
+                    <form>
+                        <label class="radio-inline">
+                          <input type="radio" name="optradio">Helga Pataki
+                        </label>
+                        <label class="radio-inline">
+                          <input type="radio" name="optradio">Harold Berman
+                        </label>
+                        <label class="radio-inline">
+                          <input type="radio" name="optradio">Eugene Horowitz
+                        </label>
+                        <label class="radio-inline">
+                          <input type="radio" name="optradio">Gerald Johanssen
+                        </label>
+                    </form>
+            </div>
+
+    <div class="container">
+            <h4>Ren and Stimpy - What was Stimpy's favorite song?</h4>
+                <form>
+                    <label class="radio-inline">
+                      <input type="radio" name="optradio">"Lady in red"
+                    </label>
+                    <label class="radio-inline">
+                      <input type="radio" name="optradio">"Happy, happy, joy, joy"
+                    </label>
+                    <label class="radio-inline">
+                      <input type="radio" name="optradio">"Mr. Roboto"
+                    </label>
+                    <label class="radio-inline">
+                     <input type="radio" name="optradio">"Thriller"
+                    </label>
+                </form>
+        </div>
+
+        <div class="container">
+                <h4>Rocko's Modern Life - What was Rocko's pet's name?</h4>
+                    <form>
+                        <label class="radio-inline">
+                          <input type="radio" name="optradio">Dilbert
+                        </label>
+                        <label class="radio-inline">
+                          <input type="radio" name="optradio">Spunky
+                        </label>
+                        <label class="radio-inline">
+                          <input type="radio" name="optradio">Heffer
+                        </label>
+                        <label class="radio-inline">
+                          <input type="radio" name="optradio">Heffer
+                        </label>
+                    </form>
+        </div>
+
+    </div>
+
+    <div class="container" id="stats">
+        <h2>Show me the stats!</h2>
+    </div>
+
+    <div class="container" id="submitButton"></div>
+
+    <div class="container" id="endGameStats"></div>
+
+    <div class="container" id="startButton"></div>
+
+    <div class="container" id="replayButton"></div>
+
+</div>
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+
+    <!-- js files for bootstrap-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+    <!-- Link to personal JavaScript file -->
+    <script src="assets/javascript/app.js"></script>
+
+</body>
+</html>
