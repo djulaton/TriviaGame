@@ -8,11 +8,7 @@
 
 
 $(document).ready(function(){
-// create global variables
-
-
-    // jQuery methods go here...
- 
+// create global variables 
 
 var correctAnswers;
 var incorrectAnswers;
@@ -21,14 +17,43 @@ var incorrectAnswers;
 
 $("#game").hide();
 $("#stats").hide();
+$("#replayButton").hide();
+$("#submitButton").hide();
+
+//create 30 second timer
+
+var counter = 5;
+
+function timer() {
+    setTimeout(timer, 1000);
+    $('#counter').text(counter);
+    counter--;
+
+    if (counter < 0) {
+        counter = 0;
+        $("#game").hide();
+        $("#stats").show();
+        $("#submitButton").hide();
+        $("#replayButton").show();
+        counter = 5;
+    }
+
+}
+
+// timer();
+
+//create a function for the start page
+
 //click events
 
 $("#startButton").on("click", function(){
     $(this).hide();
-    $(replayButton).hide();
+    $("#replayButton").hide();
     $("#submitButton").show();
+    $("#startPage").hide();
     $("#game").show();
     $("#submitButton").prepend("<button>Submit</button>");
+    timer();
 });
 
 $("#submitButton").on("click", function(){
@@ -42,6 +67,7 @@ $("#replayButton").on("click", function(){
     $(this).hide();
     $("#game").show();
     $("#submitButton").show();
+    $("#stats").hide();
 });
 
 // $("#submitButton").prepend("<button>Submit</button>");
