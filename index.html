@@ -5,54 +5,46 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Trivia Game - Week 5</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
     <!-- Bootstrap link -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
-
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Monoton" rel="stylesheet">
-
     <!-- Link to personal CSS file -->
     <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
-
 </head>
 <body>
-
     <div class="jumbotron">
     <div class="container" id="header">
         <div class="row" col-md-8>
             <h1>I love the 90's Trivia Game</h1>
         </div>
     </div>
-
-    <div id="startPage"><h2>Press the start button to begin the game</h2></div>
-
+    <!-- Start game page that shows up when game is loaded -->
+    <div id="startPage"><h4>Press the start button to begin the game</h4></div>
     <div class-"container" id="game">
-
-    <div class="container" id="counter">0</div>
-
+    <!-- Timer -->
+    <div class="container" id="counterClock"><h4>You have 15 seconds to solve: <span id ="counter">--</span></h4></div>
     <!-- Form elements -->
     <div class="container">
         <h4>1. Rugrats - What was Angelica's doll's name?</h4>
-            <form>
+            <form id="myForm1">
                 <label class="radio-inline">
-                  <input type="radio" name="optradio">Reptar
+                  <input type="radio" value="1" name="optradio">Reptar
                 </label>
                 <label class="radio-inline">
-                  <input type="radio" name="optradio">Cynthia
+                  <input type="radio" value="1" name="optradio">Cynthia
                 </label>
                 <label class="radio-inline">
-                  <input type="radio" name="optradio">Lillian
+                  <input type="radio" value="1" name="optradio">Lillian
                 </label>
                 <label class="radio-inline">
-                        <input type="radio" name="optradio">Didi
+                        <input type="radio" value="1" name="optradio">Didi
                 </label>
             </form>
     </div>
-
     <div class="container">
             <h4>2. Doug - Who was Doug Funnie's crush?</h4>
-                <form>
+                <form id="myForm2">
                     <label class="radio-inline">
                       <input type="radio" name="optradio">Mrs. Wingo
                     </label>
@@ -67,11 +59,9 @@
                     </label>
                 </form>
         </div>
-
-
         <div class="container">
                 <h4>3. Hey Arnold! - Who was Arnold's sidekick?</h4>
-                    <form>
+                    <form id="myForm3">
                         <label class="radio-inline">
                           <input type="radio" name="optradio">Helga Pataki
                         </label>
@@ -86,10 +76,9 @@
                         </label>
                     </form>
             </div>
-
     <div class="container">
-            <h4>Ren and Stimpy - What was Stimpy's favorite song?</h4>
-                <form>
+            <h4>4. Ren and Stimpy - What was Stimpy's favorite song?</h4>
+                <form id="myForm4">
                     <label class="radio-inline">
                       <input type="radio" name="optradio">"Lady in red"
                     </label>
@@ -104,10 +93,9 @@
                     </label>
                 </form>
         </div>
-
         <div class="container">
-                <h4>Rocko's Modern Life - What was Rocko's pet's name?</h4>
-                    <form>
+                <h4>5. Rocko's Modern Life - What was Rocko's pet's name?</h4>
+                    <form id="myForm5">
                         <label class="radio-inline">
                           <input type="radio" name="optradio">Dilbert
                         </label>
@@ -118,37 +106,32 @@
                           <input type="radio" name="optradio">Heffer
                         </label>
                         <label class="radio-inline">
-                          <input type="radio" name="optradio">Heffer
+                          <input type="radio" name="optradio">Mr. Bighead
                         </label>
                     </form>
         </div>
-
     </div>
-
+    <!-- End of form elements -->
+    <!-- Results page -->
     <div class="container" id="stats">
         <h2>Show me the stats!</h2>
+        <h4 id="correct">Correct: </h4>
+        <h4 id="incorrect">incorrect: </h4>
     </div>
-
+    <!-- Added empty button divs -->
     <div class="container" id="submitButton"></div>
-
     <div class="container" id="endGameStats"></div>
-
     <div class="container" id="startButton"></div>
-
     <div class="container" id="replayButton"></div>
-
 </div>
-
     <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
-
     <!-- js files for bootstrap-->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
     <!-- Link to personal JavaScript file -->
     <script src="assets/javascript/app.js"></script>
-
 </body>
 </html>
